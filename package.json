@@ -1,0 +1,17 @@
+{
+  "name": "jest-cucumber-marbles",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test:ci": "jest --ci --colors --coverage",
+    "test": "jest --watchAll --colors --coverage"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "jest-cucumber": "^2.0.11",
+    "ts-jest": "^26.1.0",
+    "typescript": "^3.9.5"
+  }
+}
