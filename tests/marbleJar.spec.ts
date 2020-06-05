@@ -7,7 +7,7 @@ defineFeature(feature, test => {
   test('Getting to know your marbles', ({
     given,
     when,
-    and
+    then
   }) => {
     given('I have a lovely jar of mixed marbles', () => {
       marbles = [{color:"red"},{color:"red"},{color:"red"},{color:"blue"},{color:"blue"}]
@@ -17,7 +17,7 @@ defineFeature(feature, test => {
       // no-op
     });
 
-    and(/^some of the marbles will be (.*)$/, (color) => {
+    then(/^some of the marbles will be (.*)$/, (color) => {
       const filteredMarbles = marbles.filter( (m) => m.color == color );
       expect(filteredMarbles.length).toBeGreaterThan(0);
     });
